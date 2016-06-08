@@ -196,6 +196,8 @@ LANGUAGES = (
     ("pt_BR", "Portuguese (Brazil)"),
     ("ru", "Russian"),
     ("zh_CN", "Chinese (Simplified)"),
+    ('de-de', u'Deutsch (Deutschland)'),  # German (Germany)
+
 )
 USE_L10N = True
 LOCALE_PATHS = (os.path.join(os.path.dirname(os.path.dirname(__file__)), 'locale'),)
