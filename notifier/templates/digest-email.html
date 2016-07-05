@@ -47,42 +47,20 @@
   <tr>
     <td align="center" valign="top" bgcolor="#ebebeb" style="background-color: #ebebeb">
       <!-- 600px container (white background) -->
-      <table border="0" width="600" cellpadding="0" cellspacing="0" class="container" bgcolor="#ffffff" style="border-radius: 5px;">
+      <table border="0" cellpadding="0" cellspacing="0" class="container" bgcolor="#ffffff" style="border-radius: 5px;">
         <tr>
           <td align="left" class="container-padding" bgcolor="#ffffff" style="background-color: #ffffff; border-radius: 5px; box-shadow: 0 1px 2px rgba(0,0,0,0.2); padding-left: 30px; padding-right: 30px; font-size: 14px; line-height: 20px; font-family: Open Sans, Helvetica, sans-serif; color: #333333;">
             <br>
 
             <!-- ### BEGIN CONTENT ### -->
             
-            <table class="email-header" cellpadding="0" cellspacing="0" border="0">
-                <tbody>
-                    <tr>
-                        <td class="edx-logo" valign="middle">
-                            <!-- TODO: is this the proper logo image? -->
-                            <img src="{{ logo_image_url }}" alt="Logo" border="0" hspace="0" vspace="0" style="vertical-align:top;" class="logo">
-                        </td>
-                        <td valign="top" style="padding-left: 20px">
-                            <p style="margin: 0; color: #5597DD">{{ title }}</p>
-                            <p style="margin: 0; font-size: 12px; color: #777777">{{ description }}</p>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <br>
             {% blocktrans with name=user.name %}Hi {{name}},{% endblocktrans %}
             <br><br>
-            {% blocktrans count thread_count=thread_count %}You have {{thread_count}} discussion thread with updates in {{course_names}}. The most recent highlights are shown below. As a reminder, you can turn off all discussion digests from any course's Discussion Home page.{% plural %}You have {{thread_count}} discussion threads with updates in {{course_names}}. The most recent highlights are shown below. As a reminder, you can turn off all discussion digests from any course's Discussion Home page.{% endblocktrans %}
+            {% blocktrans count thread_count=thread_count %}You have {{thread_count}} discussion thread with updates. The most recent highlights are shown below.{% plural %}You have {{thread_count}} discussion threads with updates. The most recent highlights are shown below.{% endblocktrans %}
             <br><br>
             {% for course in digest.courses %}
             <table class="course-table" cellpadding="0" cellspacing="0" border="0" style="width:100%; margin-bottom: 30px;">
                 <tbody>
-                    <tr>
-                        <td class="course-name" valign="middle">
-                            <div style="font-size: 16px; line-height: 24px;">
-                                {{ course.title }}
-                            </div>
-                        </td>   
-                    </tr>
                     {% for thread in course.threads %}
                         <tr>
                         <td>

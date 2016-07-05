@@ -50,25 +50,23 @@ msgstr "Hallo %(name)s,"
 #: notifier/templates/digest-email.html:74
 #: notifier/templates/digest-email.txt:10
 #, python-format
+#: notifier/templates/digest-email.html:59
+#, python-format
 msgid ""
-"You have %(thread_count)s discussion thread with updates in "
-"%(course_names)s. The most recent highlights are shown below. As a reminder,"
-" you can turn off all discussion digests from any course's Discussion Home "
-"page."
+"You have %(thread_count)s discussion thread with updates. "
+"The most recent highlights are shown below."
 msgid_plural ""
-"You have %(thread_count)s discussion threads with updates in "
-"%(course_names)s. The most recent highlights are shown below. As a reminder,"
-" you can turn off all discussion digests from any course's Discussion Home "
-"page."
-msgstr[0] "Sie haben %(thread_count)s Beitrag mit Updates in %(course_names)s. Die neusten Beiträge werden Ihnen unten angezeigt. Zur Errinerung: Sie können diese Benachrichtigung für die jeweiligen Kurse auf der jeweiligen Diskursionsseite deaktivieren."
-msgstr[1] "Sie haben %(thread_count)s Beiträge mit Updates in %(course_names)s. Die neusten Beiträge werden Ihnen unten angezeigt. Zur Errinerung: Sie können diese Benachrichtigung für die jeweiligen Kurse auf der jeweiligen Diskursionsseite deaktivieren."
+"You have %(thread_count)s discussion threads with updates. "
+"The most recent highlights are shown below."
+msgstr[0] "Sie haben %(thread_count)s Beitrag mit Updates.Die neusten Beiträge werden Ihnen unten angezeigt."
+msgstr[1] "Sie haben %(thread_count)s Beiträge mit Updates.Die neusten Beiträge werden Ihnen unten angezeigt."
 
 #: notifier/templates/digest-email.html:103
 #, python-format
 msgid ""
 "<span %(author_span_attrs)s>%(author)s: </span><span "
 "%(datetime_span_attrs)s>on %(datetime)s UTC</span>"
-msgstr "<span %(author_span_attrs)s>%(author)s: </span><span %(datetime_span_attrs)s>um %(datetime)s UTC</span>"
+msgstr "<span %(author_span_attrs)s>%(author)s: </span><span %(datetime_span_attrs)s>am %(datetime)s UTC</span>"
 
 #: notifier/templates/digest-email.html:119
 #, python-format
